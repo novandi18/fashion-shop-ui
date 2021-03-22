@@ -1,0 +1,135 @@
+<!-- 
+    Design inspired by dwinawan for Paperpillar
+    on Dribble
+    https://dribbble.com/shots/14836845--Exploration-Fashion-Website
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Shop</title>
+    <link rel="icon" href="img/favicon.svg" sizes="any" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="splash.css">
+</head>
+<body>
+    <div class="splash">
+        <div class="box">
+            <div class="head">
+                <img src="img/favicon.svg">
+                <h1>Fashion Shop</h1>
+            </div>
+            <div class="desc">
+                <span>Desain website ini terinspirasi dari salah satu karya milik <a href="https://dribbble.com/dwinawan">dwinawan</a> untuk <a href="https://dribbble.com/paperpillar">Paperpillar</a></span>
+                <span>yang karyanya dapat dilihat melalui <a href="https://dribbble.com/shots/14836845--Exploration-Fashion-Website"><img src="img/dribbble.svg" alt="dribbble">Dribbble</a></span>
+            </div>
+            <div class="preview">
+                <img src="img/preview.png" alt="preview">
+            </div>
+            <div class="accept">
+                <button type="button" id="btnwelcome">Okey, saya mengerti!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="img/profile.png" alt="profile">
+            </div>
+            <div class="menu">
+                <a href="#">TRENDING</a>
+                <a href="#">COLLECTIONS</a>
+                <a href="#">EXPLORE</a>
+                <a href="#" class="active">HOME</a>
+            </div>
+            <div class="search">
+                <div class="material-icons material-icons-outlined searchbtn">search</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="searchform">
+                <input type="text" placeholder="Cari sesuatu">
+                <button type="button" class="material-icons">search</button>
+            </div>
+            <div class="model" id="model">
+                <div class="text">
+                    <span>FEATURED COLLECTIONS</span>
+                    <h1 id="title"></h1>
+                    <div class="arrow">
+                        <div class="material-icons icon" id="back">west</div>
+                        <div class="material-icons icon arrow-active" id="next">east</div>
+                    </div>
+                </div>
+                <img src="img/model1.png" alt="Minami Hamabe" draggable="false">
+                <img src="img/model2.png" alt="Model2" draggable="false">
+            </div>
+            <div class="shop">
+                <div class="left">
+                    <div class="box">
+                        <a href="#" class="material-icons">east</a>
+                        <img src="img/hat.svg" alt="Hats">
+                        <span>HATS</span>
+                        <span>124 items</span>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="material-icons">east</a>
+                        <img src="img/bag.svg" alt="Bags">
+                        <span>BAGS</span>
+                        <span>319 items</span>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="material-icons">east</a>
+                        <img src="img/shoe.svg" alt="Shoes">
+                        <span>SHOES</span>
+                        <span>345 items</span>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="material-icons">east</a>
+                        <img src="img/glass.svg" alt="Glasses">
+                        <span>GLASSES</span>
+                        <span>181 items</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="box">
+                        <a href="#" class="material-icons">east</a>
+                        <img src="img/glove.svg" alt="Gloves">
+                        <span>GLOVES</span>
+                        <span>86 items</span>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="material-icons">east</a>
+                        <img src="img/jacket.svg" alt="Jackets">
+                        <span>JACKETS</span>
+                        <span>455 items</span>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="material-icons">east</a>
+                        <img src="img/jeans.svg" alt="Jeans">
+                        <span>JEANS</span>
+                        <span>551 items</span>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="material-icons">east</a>
+                        <img src="img/sock.svg" alt="Socks">
+                        <span>SOCKS</span>
+                        <span>71 items</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/fontawesome.min.js" integrity="sha512-KCwrxBJebca0PPOaHELfqGtqkUlFUCuqCnmtydvBSTnJrBirJ55hRG5xcP4R9Rdx9Fz9IF3Yw6Rx40uhuAHR8Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="splash.js"></script>
+</body>
+</html>
